@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Inimigo
+  - Coletavel
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - Water
   - UI
   - Bloqueio
-  - 
-  - 
+  - Consumiveis
+  - inimigos
   - 
   - 
   - 
@@ -41,6 +42,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Piso
+    uniqueID: 1032747151
+    locked: 0
+  - name: Objetos
+    uniqueID: 3386191867
     locked: 0
   - name: Caracteres
     uniqueID: 1011135423
