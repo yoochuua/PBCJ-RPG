@@ -178,5 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb215bdc26784f429e1a350d3c9c76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PontosDano: 0
-  MaxPontosDano: 0
+  pontosDano: {fileID: 11400000, guid: c91ed18b43f3aa342a49552dfd7209ac, type: 2}
+  inicioPontosDano: 6
+  MaxPontosDano: 10
+  inventarioPrefab: {fileID: 5362159148207130881, guid: 2c856b92880e34644a0df7d73398a058, type: 3}
+  healthBarPrefab: {fileID: -4639330880294701586, guid: f66afdde5da4d97438bd078d41604cda, type: 3}
