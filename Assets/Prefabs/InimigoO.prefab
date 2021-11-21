@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8240047376478850252}
   - component: {fileID: 8240047376478850289}
   - component: {fileID: 8240047376478850254}
+  - component: {fileID: 6047191031074079949}
   m_Layer: 8
   m_Name: InimigoO
   m_TagString: Inimigo
@@ -131,3 +132,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6047191031074079949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8240047376478850253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d863b4a81f518e4da1d37f1eca3d858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inicioPontosDano: 2
+  MaxPontosDano: 2
+  forcaDano: 1

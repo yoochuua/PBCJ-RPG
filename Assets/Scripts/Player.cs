@@ -8,13 +8,46 @@ public class Player : Caractere
     Inventario inventario;  
     public HealthBar healthBarPrefab;
     HealthBar healthBar;
+
+    public PontosDano pontosDano; // Tem o valor da "Saúde" do objeto
     private void Start ()
      {
         inventario = Instantiate(inventarioPrefab);
+        healthBar = Instantiate(healthBarPrefab);
         healthBar.caractere = this;
         pontosDano.valor = inicioPontosDano;
-        healthBar = Instantiate(healthBarPrefab);
     }
+    
+    public override IEnumerator DanoCaractere(int dano, float intervalo)
+    {
+        while (true){
+            pontosDano.valor = pontosDano.valor - dano;
+            if(pontosDano.valor <= float.Epsilon){
+                KillCaractere();
+                break;
+            }
+            if(intervalo > float.Epsilon){
+                yield return new WaitForSeconds(intervalo);
+            }
+            else{
+                break;
+            }
+        }
+    }
+    public override void ResetCaractere(){
+        inventario = Instantiate(inventarioPrefab);
+        healthBar = Instantiate(healthBarPrefab);
+        healthBar.caractere = this;
+        pontosDano.valor = inicioPontosDano;
+    }
+
+    public override void KillCaractere()
+    {
+        base.KillCaractere();
+        Destroy(healthBar.gameObject);
+        Destroy(inventario.gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Verifica se é um objeto coletável
