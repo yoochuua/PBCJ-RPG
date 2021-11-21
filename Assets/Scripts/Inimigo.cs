@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inimigo : Caractere
 {
     float pontosVida; // equivalente a saúde do inimigo
+    //.
     public int forcaDano; // poder de dano
     Coroutine danoCoroutine;
 
