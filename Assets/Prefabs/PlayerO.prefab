@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008181274, y: -0.26998103}
+  m_Offset: {x: 0.008181274, y: -0.08528891}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.525488, y: 0.46003792}
+  m_Size: {x: 0.525488, y: 0.8294222}
   m_EdgeRadius: 0
 --- !u!50 &5599981163271826175
 Rigidbody2D:
@@ -178,8 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb215bdc26784f429e1a350d3c9c76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pontosDano: {fileID: 11400000, guid: c91ed18b43f3aa342a49552dfd7209ac, type: 2}
   inicioPontosDano: 6
   MaxPontosDano: 10
   inventarioPrefab: {fileID: 5362159148207130881, guid: 2c856b92880e34644a0df7d73398a058, type: 3}
   healthBarPrefab: {fileID: -4639330880294701586, guid: f66afdde5da4d97438bd078d41604cda, type: 3}
+  pontosDano: {fileID: 11400000, guid: c91ed18b43f3aa342a49552dfd7209ac, type: 2}
