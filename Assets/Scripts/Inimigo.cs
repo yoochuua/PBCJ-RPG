@@ -22,19 +22,20 @@ public class Inimigo : Caractere
     /*
     Método que adicina danos ao player de acordo com o que foi setado em força dano
     */
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision) { 
         if(collision.gameObject.CompareTag("Player")){
             Player player = collision.gameObject.GetComponent<Player>();
             if(danoCoroutine == null){
                 danoCoroutine = StartCoroutine(player.DanoCaractere(forcaDano, 1.0f));
             }
+
         }
     }
 
     /*
     Método que verifica se o player já não está mais em contato com o inimigo, caso não, ele para o dano
     */
-    void OnCollisionExit2D(Collision2D collision) {
+    void OnTriggerExit2D(Collider2D collision) {
         if(collision.gameObject.CompareTag("Player")){
             if(danoCoroutine != null){
                 StopCoroutine(danoCoroutine);
@@ -50,6 +51,8 @@ public class Inimigo : Caractere
     public override IEnumerator DanoCaractere(int dano, float intervalo)
     {
         while(true){
+            StartCoroutine(FlickerCaractere());
+
             pontosVida = pontosVida - dano;
             if(pontosVida <= float.Epsilon){
                 KillCaractere();

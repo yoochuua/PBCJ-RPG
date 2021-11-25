@@ -12,6 +12,13 @@ public abstract class Caractere : MonoBehaviour
     public float MaxPontosDano; // valor maximo permitido de saude
 
     public abstract void ResetCaractere(); //caractere volta
+
+    public virtual IEnumerator FlickerCaractere()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
     public abstract IEnumerator DanoCaractere(int dano, float intervalo); //verifica danos do personagem
 
     /*

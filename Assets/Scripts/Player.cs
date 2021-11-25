@@ -28,6 +28,7 @@ public class Player : Caractere
     public override IEnumerator DanoCaractere(int dano, float intervalo)
     {
         while (true){
+            StartCoroutine(FlickerCaractere());
             pontosDano.valor = pontosDano.valor - dano;
             if(pontosDano.valor <= float.Epsilon){
                 KillCaractere();

@@ -152,7 +152,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &-7205080358098532548
 MonoBehaviour:
@@ -199,3 +199,4 @@ MonoBehaviour:
   municaoPrefab: {fileID: 1396850472321851680, guid: a8b8fd2f358187d4da280168676336d2, type: 3}
   tamanhoPiscina: 7
   velocidadeArma: 2
+  animator: {fileID: 0}

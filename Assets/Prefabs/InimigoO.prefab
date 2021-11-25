@@ -133,7 +133,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &6047191031074079949
 MonoBehaviour:
@@ -201,3 +201,4 @@ MonoBehaviour:
   velocidadePeramular: 0.8
   intervaloMudancaDirecao: 3
   perseguePlayer: 1
+  temDirecao: 0
