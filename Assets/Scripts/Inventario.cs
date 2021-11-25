@@ -7,13 +7,14 @@ public class Inventario : MonoBehaviour
     Image[] itemImagens = new Image[numSlots]; // array de imagens
     Item[] items = new Item[numSlots]; // array de itens
     GameObject[] slots = new GameObject[numSlots]; //array de slots
-    // Start is called before the first frame update
+    
+    /*Start is called before the first frame update*/
     void Start()
     {
         CriaSlots();
     }
 
-    // Update is called once per frame
+    /*Update is called once per frame*/
     void Update()
     {
         
