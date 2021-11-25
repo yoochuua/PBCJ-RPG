@@ -78,7 +78,6 @@ public class Player : Caractere
                 print("Acertou: " + danoObjeto.NomeObjeto);
                 switch (danoObjeto.tipoItem)
                 {
-                    // Teste inicio
                     case Item.TipoItem.GEM1:
                     //DeveDesaparecer = true; 
                     DeveDesaparecer = inventario.AddItem(danoObjeto);
@@ -99,7 +98,6 @@ public class Player : Caractere
                     //DeveDesaparecer = true; 
                     DeveDesaparecer = inventario.AddItem(danoObjeto);
                         break;
-                    // Teste fim
                     case Item.TipoItem.MOEDA:
                     //DeveDesaparecer = true; 
                     DeveDesaparecer = inventario.AddItem(danoObjeto);

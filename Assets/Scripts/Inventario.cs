@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 ///<summary> Classe que controla como os itens se comportam no inventário e cria slots
 public class Inventario : MonoBehaviour
@@ -19,7 +20,9 @@ public class Inventario : MonoBehaviour
     /*Update is called once per frame*/
     void Update()
     {
-        
+        if(VerificaInvCheio()){
+            SceneManager.LoadScene("SceneBonus");
+        }
     }
 
     /*
@@ -69,5 +72,20 @@ public class Inventario : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public bool VerificaInvCheio(){
+        int quantidadeDeItens = 0;
+        for(int i=0; i<items.Length;i++){
+            if(items[i] != null){
+                quantidadeDeItens++;
+            }
+        }
+        if(quantidadeDeItens == items.Length){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
