@@ -44,8 +44,8 @@ public class Inimigo : Caractere
     }
 
     /*
-    Método auxiliar que verifica se o player ainda tem vida, caso sim, retira a quantidade de danos causados.
-    Caso o player tenha zerado a quantidade de vidas ele morre.
+    Método que verifica se o inimigo ainda tem vida, caso sim, retira a quantidade de danos causados.
+    Caso não, ele morre.
     */
     public override IEnumerator DanoCaractere(int dano, float intervalo)
     {
