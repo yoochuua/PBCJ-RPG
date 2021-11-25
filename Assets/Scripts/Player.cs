@@ -78,6 +78,28 @@ public class Player : Caractere
                 print("Acertou: " + danoObjeto.NomeObjeto);
                 switch (danoObjeto.tipoItem)
                 {
+                    // Teste inicio
+                    case Item.TipoItem.GEM1:
+                    //DeveDesaparecer = true; 
+                    DeveDesaparecer = inventario.AddItem(danoObjeto);
+                        break;
+                    case Item.TipoItem.GEM2:
+                    //DeveDesaparecer = true; 
+                    DeveDesaparecer = inventario.AddItem(danoObjeto);
+                        break;
+                    case Item.TipoItem.GEM3:
+                    //DeveDesaparecer = true; 
+                    DeveDesaparecer = inventario.AddItem(danoObjeto);
+                        break;
+                    case Item.TipoItem.GEM4:
+                    //DeveDesaparecer = true; 
+                    DeveDesaparecer = inventario.AddItem(danoObjeto);
+                        break;
+                    case Item.TipoItem.GEM5:
+                    //DeveDesaparecer = true; 
+                    DeveDesaparecer = inventario.AddItem(danoObjeto);
+                        break;
+                    // Teste fim
                     case Item.TipoItem.MOEDA:
                     //DeveDesaparecer = true; 
                     DeveDesaparecer = inventario.AddItem(danoObjeto);
