@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
+///<summary> Classe que faz o arredondamento da câmera para diminuir o "tremido"
 public class ArredondaPosCamera : CinemachineExtension
 {
     public float PixelsPerUnit = 3;
+
+    /*
+    
+    */
     protected override void PostPipelineStageCallback(
         CinemachineVirtualCameraBase vcam,
         CinemachineCore.Stage stage, ref CameraState state,
@@ -19,6 +24,9 @@ public class ArredondaPosCamera : CinemachineExtension
         }
     }
 
+    /*
+    Metodo auxiliar que faz o arredondamento de cada componente (x e y)
+    */
     float Round(float x)
     {
         return Mathf.Round(x * PixelsPerUnit) / PixelsPerUnit;

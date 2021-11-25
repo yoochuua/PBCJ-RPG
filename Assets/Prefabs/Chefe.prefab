@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5599981163271826171
+--- !u!1 &4663233803120859950
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5599981163271826174}
-  - component: {fileID: 5599981163271826169}
-  - component: {fileID: 5599981163271826168}
-  - component: {fileID: 5599981163271826172}
-  - component: {fileID: 5599981163271826175}
-  - component: {fileID: -7205080358098532548}
-  - component: {fileID: 5250193386668153130}
-  - component: {fileID: 6750738197013957079}
-  m_Layer: 6
-  m_Name: PlayerO
-  m_TagString: Player
+  - component: {fileID: 4663233803120859944}
+  - component: {fileID: 4663233803120859945}
+  - component: {fileID: 4663233803120859949}
+  - component: {fileID: 4466199691051651495}
+  - component: {fileID: 3724704702592434088}
+  - component: {fileID: -2296102812552556956}
+  - component: {fileID: -3468418027093401164}
+  - component: {fileID: -1266703154638570404}
+  m_Layer: 0
+  m_Name: Chefe
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5599981163271826174
+--- !u!4 &4663233803120859944
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
+  m_GameObject: {fileID: 4663233803120859950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.23, y: -0.89, z: -0.72494775}
+  m_LocalScale: {x: 0.080717996, y: 0.07216826, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5599981163271826169
+--- !u!212 &4663233803120859945
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
+  m_GameObject: {fileID: 4663233803120859950}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,31 +74,31 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1011135423
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5012491988584609388, guid: be4dbca6e38c1ce4d9ec5cf8d4554678, type: 3}
+  m_Sprite: {fileID: -3192589267707343793, guid: 23e89bdc31ffcb84d89e2ab33751f65d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 29.375, y: 30.00693}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5599981163271826168
+--- !u!95 &4663233803120859949
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
+  m_GameObject: {fileID: 4663233803120859950}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb4fd8022f25b15418cce0420c012dfc, type: 2}
+  m_Controller: {fileID: 9100000, guid: cf3a654de91da4646853926585e7bd72, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,40 +107,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &5599981163271826172
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.008181274, y: -0.08528891}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.525488, y: 0.8294222}
-  m_EdgeRadius: 0
---- !u!50 &5599981163271826175
+--- !u!50 &4466199691051651495
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
+  m_GameObject: {fileID: 4663233803120859950}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -154,48 +128,77 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-7205080358098532548
+--- !u!61 &3724704702592434088
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4663233803120859950}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.2670989, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 29.375, y: 30.00693}
+    newSize: {x: 29.375, y: 30.00693}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 26.840801, y: 30.00693}
+  m_EdgeRadius: 0
+--- !u!58 &-2296102812552556956
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4663233803120859950}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
+--- !u!114 &-3468418027093401164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
+  m_GameObject: {fileID: 4663233803120859950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdc61997d7f52594d818ee2dbf5ec0af, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d863b4a81f518e4da1d37f1eca3d858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VelocidadeMovimento: 3
---- !u!114 &5250193386668153130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdb215bdc26784f429e1a350d3c9c76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inicioPontosDano: 6
+  inicioPontosDano: 10
   MaxPontosDano: 10
-  inventarioPrefab: {fileID: 5362159148207130881, guid: 2c856b92880e34644a0df7d73398a058, type: 3}
-  healthBarPrefab: {fileID: -4639330880294701586, guid: f66afdde5da4d97438bd078d41604cda, type: 3}
-  pontosDano: {fileID: 11400000, guid: c91ed18b43f3aa342a49552dfd7209ac, type: 2}
---- !u!114 &6750738197013957079
+  forcaDano: 5
+--- !u!114 &-1266703154638570404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5599981163271826171}
+  m_GameObject: {fileID: 4663233803120859950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e292e207e04ec947a39a534650aacf6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a4bc1ee27d10644982c55ac0399aa2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  municaoPrefab: {fileID: 1396850472321851680, guid: a8b8fd2f358187d4da280168676336d2, type: 3}
-  tamanhoPiscina: 7
-  velocidadeArma: 2
+  velocidadePerseguicao: 5
+  velocidadePeramular: 1
+  intervaloMudancaDirecao: 3
+  perseguePlayer: 1
+  temDirecao: 1
