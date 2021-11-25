@@ -74,6 +74,9 @@ public class Inventario : MonoBehaviour
         return false;
     }
 
+    /*
+    Função que verifica se o inventário está cheio
+    */
     public bool VerificaInvCheio(){
         int quantidadeDeItens = 0;
         for(int i=0; i<items.Length;i++){
