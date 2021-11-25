@@ -14,6 +14,7 @@ public class Perambular : MonoBehaviour
     public float intervaloMudancaDirecao; //tempo para alterar direção
     public bool perseguePlayer; //Indica se é do tipo que persegue o player ou não
     float anguloAtual = 0; //Angulo atribuído
+    public bool temDirecao; //Verifica se o inimigo é do tipo que tem uma direção de movimentos
 
     Coroutine moverCoroutine;
     Rigidbody2D rb2D; //Armazena rigidbody2D
@@ -96,7 +97,17 @@ public class Perambular : MonoBehaviour
             {
                 posicaoFinal = alvoTransform.position;
             }
-            
+            if(temDirecao)
+            {
+                if(posicaoFinal.x >= 0)
+                {
+                    animator.SetBool("direita", true);
+                }
+                else
+                {
+                    animator.SetBool("direita", false);
+                }
+            }
             if (rbParaMover != null)
             {
                 //Move o inimigo

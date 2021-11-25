@@ -201,3 +201,4 @@ MonoBehaviour:
   velocidadePeramular: 1
   intervaloMudancaDirecao: 3
   perseguePlayer: 1
+  temDirecao: 1
