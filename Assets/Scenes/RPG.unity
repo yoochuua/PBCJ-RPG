@@ -521,6 +521,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6047191031074079949, guid: 20368ec0859dad24992bd66821c3f106, type: 3}
+      propertyPath: nome
+      value: comum
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047191031074079949, guid: 20368ec0859dad24992bd66821c3f106, type: 3}
+      propertyPath: tipo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047191031074079949, guid: 20368ec0859dad24992bd66821c3f106, type: 3}
       propertyPath: inicioPontosDano
       value: 2
       objectReference: {fileID: 0}
@@ -2065,11 +2073,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6107332792898229291, guid: cadd2f892e75e58438219553e6ce2d01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4895697
+      value: -2.47962
       objectReference: {fileID: 0}
     - target: {fileID: 6107332792898229291, guid: cadd2f892e75e58438219553e6ce2d01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.14583105
+      value: 0.3505742
       objectReference: {fileID: 0}
     - target: {fileID: 6107332792898229291, guid: cadd2f892e75e58438219553e6ce2d01, type: 3}
       propertyPath: m_LocalPosition.z

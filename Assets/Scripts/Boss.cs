@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-///<summary> Classe que controla os pontos de danos causados pelo inimigo
-public class Inimigo : Caractere
-{
 
+///<summary> Classe que controla os pontos de danos causados pelo inimigo
+public class Boss : Caractere
+{
     float pontosVida; // equivalente a saúde do inimigo
     public int forcaDano; // poder de dano
     Coroutine danoCoroutine;
-    public int tipo;
+
     /* Start is called before the first frame update*/
     void Start()
     {
-
+        
     }
 
     private void OnEnable(){
@@ -57,9 +56,6 @@ public class Inimigo : Caractere
             pontosVida = pontosVida - dano;
             if(pontosVida <= float.Epsilon){
                 KillCaractere();
-                 if(tipo == 2){
-                     SceneManager.LoadScene("vitoria");
-                 }
                 break;
             }
             if(intervalo > float.Epsilon){
@@ -80,3 +76,4 @@ public class Inimigo : Caractere
         
     }
 }
+

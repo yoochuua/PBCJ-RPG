@@ -386,7 +386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6107332792898229291, guid: cadd2f892e75e58438219553e6ce2d01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.49957
+      value: -24.915459
       objectReference: {fileID: 0}
     - target: {fileID: 6107332792898229291, guid: cadd2f892e75e58438219553e6ce2d01, type: 3}
       propertyPath: m_LocalPosition.y
@@ -448,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1966222711018775580, guid: b2f6ad0e886d20a44b27d70e9feec07a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.49957
+      value: -24.915459
       objectReference: {fileID: 0}
     - target: {fileID: 1966222711018775580, guid: b2f6ad0e886d20a44b27d70e9feec07a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11394,8 +11394,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3468418027093401164, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
+      propertyPath: nome
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: -3468418027093401164, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
+      propertyPath: tipo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3468418027093401164, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3468418027093401164, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
+      propertyPath: MaxPontosDano
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -3468418027093401164, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
       propertyPath: inicioPontosDano
-      value: 7
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: -2296102812552556956, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
       propertyPath: m_Radius
@@ -11491,7 +11507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663233803120859950, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
       propertyPath: m_TagString
-      value: Inimigo
+      value: Boss
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d0437a7e543114ebd6cb9c4eca3928, type: 3}
