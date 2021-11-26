@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 ///<summary>  Classe que indica 
 public class Player : Caractere
 {
@@ -56,6 +56,7 @@ public class Player : Caractere
     */
     public override void KillCaractere()
     {
+        SceneManager.LoadScene("GameOver");
         base.KillCaractere();
         Destroy(healthBar.gameObject);
         Destroy(inventario.gameObject);

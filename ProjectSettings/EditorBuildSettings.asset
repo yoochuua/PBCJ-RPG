@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SceneBonus.unity
+    guid: b9bba68ca2b326f4d9754c61627ac1df
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 46caa248d10f8dc4da9c48a60548c416
+  - enabled: 1
+    path: Assets/Scenes/RPG.unity
+    guid: 0eb2f6ca57129a94199c8ec1eb013d3d
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 21442219a45590241a6232fa5d447fbc
+  - enabled: 1
+    path: Assets/Scenes/vitoria.unity
+    guid: 8a45fbbf951a30a40a98339bb7035971
+  - enabled: 1
+    path: Assets/Scenes/creditos.unity
+    guid: c61824c00b55eb747aa08a615c09531f
   m_configObjects: {}
